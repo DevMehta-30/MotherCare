@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import landingPic from "../assets/Back_Top.svg";
 import landingBottom from "../assets/Back_Bottom.svg";
 import Navbar from "../components/navbar";
@@ -26,12 +27,16 @@ function Landing() {
               Find yourself in the journey!
             </div>
             <div className="flex flex-row py-8">
-              <button className="bg-[#FF9999] py-2 px-8 text-white rounded-full">
-                Create Account
-              </button>
-              <button className="mx-4 px-16 border-2 border-black rounded-full">
-                Login
-              </button>
+              <Link to="/signup">
+                <button className="bg-[#FF9999] py-2 px-8 text-white rounded-full">
+                  Create Account
+                </button>
+              </Link>
+              <Link to="/login">
+                <button className="mx-4 px-16 py-2 border-2 border-black rounded-full">
+                  Login
+                </button>
+              </Link>
             </div>
           </div>
           <div className="w-1/6 py-36">
